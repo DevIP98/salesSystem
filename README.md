@@ -37,7 +37,7 @@ Gestión de Punto de Venta y generación de Facturas con Laravel 10 y MySql.
 1.  **Clonar repositorio o descargar**
 
     ```bash
-    $ git clone https://github.com/DevIP98/salesSystem.git
+    git clone https://github.com/DevIP98/salesSystem.git
     ```
 1. **Configuración**
     ```bash
@@ -55,7 +55,7 @@ Gestión de Punto de Venta y generación de Facturas con Laravel 10 y MySql.
     Cambie el nombre o copie el `.env.example` archivo a `.env`
     ```bash
     # Generar clave de aplicación
-    $ php artisan key:generate
+    php artisan key:generate
     ```
 1. **Configuración regional personalizada del farsante**
 
@@ -72,19 +72,19 @@ Gestión de Punto de Venta y generación de Facturas con Laravel 10 y MySql.
 
 1. **Base de datos de semillas**
     ```bash
-    $ php artisan:migrate:fresh --seed
+    php artisan migrate:fresh --seed
 
     #Nota: Si muestra un error, intente volver a ejecutar este comando.
     ```
 1. **Crear enlace de almacenamiento**
 
     ```bash
-    $ php artisan storage:link
+    php artisan storage:link
     ```
 1. **Ejecutar servidor**
 
     ```bash
-    $ php artisan serve
+    php artisan serve
     ```
 1. **Acceso al sistema**
 
@@ -99,12 +99,12 @@ Gestión de Punto de Venta y generación de Facturas con Laravel 10 y MySql.
 1. **Crear enlace de almacenamiento**
 
     ```bash
-    $ php artisan storage:link
+    php artisan storage:link
     ```
 1. **Ejecutar servidor**
 
     ```bash
-    $ php artisan serve
+    php artisan serve
     ```
 1. **Login**
 
