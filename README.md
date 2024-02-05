@@ -40,30 +40,31 @@ Gestión de Punto de Venta y generación de Facturas con Laravel 10 y MySql.
     git clone https://github.com/DevIP98/salesSystem.git
     ```
 1. **Configuración**
-    ```bash
     # Ir al repositorio
-    $ cd sistema-punto-de-venta
-
+    ```bash
+     cd salesSystem
+    ```
     # Instalar dependencias
-    $ composer install
-
+   ```
+    composer install
+    ```
     # Abre con tu editor de texto
-    $ code .
+   ```
+    code .
     ```
 1. **.ENV**
 
     Cambie el nombre o copie el `.env.example` archivo a `.env`
-    ```bash
     # Generar clave de aplicación
+   ```
     php artisan key:generate
     ```
 1. **Configuración regional personalizada del farsante**
 
     Para configurar Faker Locale, agregue esta línea de código al final `.env` archivo.
-    ```bash
-    # En este caso, la configuración regional es Perú
-
-    FAKER_LOCALE="id_ID"
+    # En este caso, la configuración regional es Colombia
+    ```
+    FAKER_LOCALE="es_CO"
     ```
 
 1. **Configurar base de datos**
@@ -71,14 +72,14 @@ Gestión de Punto de Venta y generación de Facturas con Laravel 10 y MySql.
     Configure las credenciales de su base de datos en su archivo `.env`
 
 1. **Base de datos de semillas**
-    ```bash
-    php artisan migrate:fresh --seed
-
-    #Nota: Si muestra un error, intente volver a ejecutar este comando.
     ```
+    php artisan migrate:fresh --seed
+    ```
+    #Nota: Si muestra un error, intente volver a ejecutar este comando.
+
 1. **Crear enlace de almacenamiento**
 
-    ```bash
+    ```
     php artisan storage:link
     ```
 1. **Ejecutar servidor**
@@ -94,7 +95,7 @@ Gestión de Punto de Venta y generación de Facturas con Laravel 10 y MySql.
 1. **Gráfico de configuración**
 
     Abrir documento `./config/cart.php`. Puede establecer un impuesto, número de formato, etc.
-    > Para más detalles, escríbame al: https://wa.link/lckvt3
+    > Para más detalles, escríbame al: 
 
 1. **Crear enlace de almacenamiento**
 
@@ -114,4 +115,5 @@ Gestión de Punto de Venta y generación de Facturas con Laravel 10 y MySql.
 
 ## 📝 Contactos
 
-Correo: ip1805x@gmail.com
+ip1805x@gmail.com
+riesga@gmail.com
