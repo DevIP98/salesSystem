@@ -14,6 +14,7 @@
         <link rel="stylesheet" href="{{ asset('assets/vendor/remixicon/fonts/remixicon.css') }}">
 
         @yield('specificpagestyles')
+        @livewireStyles
     </head>
 <body>
     <!-- loader Start -->
@@ -44,5 +45,6 @@
 
     <!-- App JavaScript -->
     <script src="{{ asset('assets/js/app.js') }}"></script>
+    @livewireScripts
 </body>
 </html>
