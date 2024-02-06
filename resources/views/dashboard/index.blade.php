@@ -25,7 +25,7 @@
             <div class="row">
                 <div class="col-lg-4 col-md-4">
                     <div class="card card-block card-stretch card-height">
-                        <div class="card-body bg-primary">
+                        <div class="card-body bg-primary rounded">
                             <div class="d-flex align-items-center mb-4 card-total-sale">
                                 <div class="icon iq-icon-box-2 bg-info-light">
                                     <img src="../assets/images/product/1.png" class="img-fluid" alt="image">
@@ -44,7 +44,7 @@
                 </div>
                 <div class="col-lg-4 col-md-4">
                     <div class="card card-block card-stretch card-height">
-                        <div class="card-body bg-danger">
+                        <div class="card-body bg-danger rounded">
                             <div class="d-flex align-items-center mb-4 card-total-sale">
                                 <div class="icon iq-icon-box-2 bg-danger-light">
                                     <img src="../assets/images/product/2.png" class="img-fluid" alt="image">
@@ -63,7 +63,7 @@
                 </div>
                 <div class="col-lg-4 col-md-4">
                     <div class="card card-block card-stretch card-height">
-                        <div class="card-body bg-success">
+                        <div class="card-body bg-success rounded">
                             <div class="d-flex align-items-center mb-4 card-total-sale">
                                 <div class="icon iq-icon-box-2 bg-success-light">
                                     <img src="../assets/images/product/3.png" class="img-fluid" alt="image">

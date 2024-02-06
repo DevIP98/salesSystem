@@ -1,7 +1,7 @@
 
 <div class="iq-sidebar sidebar-default ">
     <div class="iq-sidebar-logo d-flex align-items-center justify-content-between">
-        <a href="{{ route('dashboard') }}" class="header-logo">
+        <a wire:navigate href="{{ route('dashboard') }}" class="header-logo">
             <img src="{{ asset('assets/images/logo/logo-min.png') }}" class="img-fluid rounded-normal light-logo" alt="logo"><h5 class="logo-title light-logo ml-3">POSApuuray</h5>
         </a>
         <div class="iq-menu-bt-sidebar ml-0">
@@ -51,17 +51,17 @@
                             </a>
                         </li>
                         <li class="{{ Request::is('orders/complete*') ? 'active' : '' }}">
-                            <a href="{{ route('order.completeOrders') }}">
+                            <a wire:navigate href="{{ route('order.completeOrders') }}">
                                 <i class="fa-solid fa-arrow-right"></i><span>Pedidos completos</span>
                             </a>
                         </li>
                         <li class="{{ Request::is('pending/due*') ? 'active' : '' }}">
-                            <a href="{{ route('order.pendingDue') }}">
+                            <a wire:navigate href="{{ route('order.pendingDue') }}">
                                 <i class="fa-solid fa-arrow-right"></i><span>Pendientes</span>
                             </a>
                         </li>
                         <li class="{{ Request::is(['stock*']) ? 'active' : '' }}">
-                            <a href="{{ route('order.stockManage') }}">
+                            <a wire:navigate href="{{ route('order.stockManage') }}">
                                 <i class="fa-solid fa-arrow-right"></i><span>Gestion de Stocks</span>
                             </a>
                         </li>
@@ -80,17 +80,17 @@
                     </a>
                     <ul id="products" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle" style="">
                         <li class="{{ Request::is(['products']) ? 'active' : '' }}">
-                            <a href="{{ route('products.index') }}">
+                            <a wire:navigate href="{{ route('products.index') }}">
                                 <i class="fa-solid fa-arrow-right"></i><span>Productos</span>
                             </a>
                         </li>
                         <li class="{{ Request::is(['products/create']) ? 'active' : '' }}">
-                            <a href="{{ route('products.create') }}">
+                            <a wire:navigate href="{{ route('products.create') }}">
                                 <i class="fa-solid fa-arrow-right"></i><span>Agregar producto</span>
                             </a>
                         </li>
                         <li class="{{ Request::is(['categories*']) ? 'active' : '' }}">
-                            <a href="{{ route('categories.index') }}">
+                            <a wire:navigate href="{{ route('categories.index') }}">
                                 <i class="fa-solid fa-arrow-right"></i><span>Categorias</span>
                             </a>
                         </li>
@@ -102,7 +102,7 @@
 
                 @if (auth()->user()->can('employee.menu'))
                 <li class="{{ Request::is('employees*') ? 'active' : '' }}">
-                    <a href="{{ route('employees.index') }}" class="svg-icon">
+                    <a wire:navigate href="{{ route('employees.index') }}" class="svg-icon">
                         <i class="fa-solid fa-users"></i>
                         <span class="ml-3">Empleados</span>
                     </a>
@@ -111,7 +111,7 @@
 
                 @if (auth()->user()->can('customer.menu'))
                 <li class="{{ Request::is('customers*') ? 'active' : '' }}">
-                    <a href="{{ route('customers.index') }}" class="svg-icon">
+                    <a wire:navigate href="{{ route('customers.index') }}" class="svg-icon">
                         <i class="fa-solid fa-users"></i>
                         <span class="ml-3">Clientes</span>
                     </a>
@@ -120,7 +120,7 @@
 
                 @if (auth()->user()->can('supplier.menu'))
                 <li class="{{ Request::is('suppliers*') ? 'active' : '' }}">
-                    <a href="{{ route('suppliers.index') }}" class="svg-icon">
+                    <a wire:navigate href="{{ route('suppliers.index') }}" class="svg-icon">
                         <i class="fa-solid fa-users"></i>
                         <span class="ml-3">Proveedores</span>
                     </a>
@@ -139,22 +139,22 @@
                     <ul id="advance-salary" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle" style="">
 
                         <li class="{{ Request::is(['advance-salary', 'advance-salary/*/edit']) ? 'active' : '' }}">
-                            <a href="{{ route('advance-salary.index') }}">
+                            <a wire:navigate href="{{ route('advance-salary.index') }}">
                                 <i class="fa-solid fa-arrow-right"></i><span>Salario anticipado</span>
                             </a>
                         </li>
                         <li class="{{ Request::is('advance-salary/create*') ? 'active' : '' }}">
-                            <a href="{{ route('advance-salary.create') }}">
+                            <a wire:navigate href="{{ route('advance-salary.create') }}">
                                 <i class="fa-solid fa-arrow-right"></i><span>Crear salario anticipado</span>
                             </a>
                         </li>
                         <li class="{{ Request::is('pay-salary') ? 'active' : '' }}">
-                            <a href="{{ route('pay-salary.index') }}">
+                            <a wire:navigate href="{{ route('pay-salary.index') }}">
                                 <i class="fa-solid fa-arrow-right"></i><span>Pagar salario</span>
                             </a>
                         </li>
                         <li class="{{ Request::is('pay-salary/history*') ? 'active' : '' }}">
-                            <a href="{{ route('pay-salary.payHistory') }}">
+                            <a wire:navigate href="{{ route('pay-salary.payHistory') }}">
                                 <i class="fa-solid fa-arrow-right"></i><span>Historia Pago Salario</span>
                             </a>
                         </li>
@@ -174,12 +174,12 @@
                     <ul id="attendence" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle" style="">
 
                         <li class="{{ Request::is(['employee/attendence']) ? 'active' : '' }}">
-                            <a href="{{ route('attendence.index') }}">
+                            <a wire:navigate href="{{ route('attendence.index') }}">
                                 <i class="fa-solid fa-arrow-right"></i><span>Toda la asistencia</span>
                             </a>
                         </li>
                         <li class="{{ Request::is('employee/attendence/*') ? 'active' : '' }}">
-                            <a href="{{ route('attendence.create') }}">
+                            <a wire:navigate href="{{ route('attendence.create') }}">
                                 <i class="fa-solid fa-arrow-right"></i><span>Crear asistencia</span>
                             </a>
                         </li>
@@ -201,17 +201,17 @@
                     </a>
                     <ul id="permission" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle" style="">
                         <li class="{{ Request::is(['permission', 'permission/create', 'permission/edit/*']) ? 'active' : '' }}">
-                            <a href="{{ route('permission.index') }}">
+                            <a wire:navigate href="{{ route('permission.index') }}">
                                 <i class="fa-solid fa-arrow-right"></i><span>Permisos</span>
                             </a>
                         </li>
                         <li class="{{ Request::is(['role', 'role/create', 'role/edit/*']) ? 'active' : '' }}">
-                            <a href="{{ route('role.index') }}">
+                            <a wire:navigate href="{{ route('role.index') }}">
                                 <i class="fa-solid fa-arrow-right"></i><span>Roles</span>
                             </a>
                         </li>
                         <li class="{{ Request::is(['role/permission*']) ? 'active' : '' }}">
-                            <a href="{{ route('rolePermission.index') }}">
+                            <a wire:navigate href="{{ route('rolePermission.index') }}">
                                 <i class="fa-solid fa-arrow-right"></i><span>Papel en los permisos</span>
                             </a>
                         </li>
@@ -221,7 +221,7 @@
 
                 @if (auth()->user()->can('user.menu'))
                 <li class="{{ Request::is('users*') ? 'active' : '' }}">
-                    <a href="{{ route('users.index') }}" class="svg-icon">
+                    <a wire:navigate href="{{ route('users.index') }}" class="svg-icon">
                         <i class="fa-solid fa-users"></i>
                         <span class="ml-3">Usuarios</span>
                     </a>
@@ -230,7 +230,7 @@
 
                 @if (auth()->user()->can('database.menu'))
                 <li class="{{ Request::is('database/backup*') ? 'active' : '' }}">
-                    <a href="{{ route('backup.index') }}" class="svg-icon">
+                    <a wire:navigate href="{{ route('backup.index') }}" class="svg-icon">
                         <i class="fa-solid fa-database"></i>
                         <span class="ml-3">Backup</span>
                     </a>

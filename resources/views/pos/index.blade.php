@@ -89,7 +89,7 @@
                     </div>
                     <div class="col-md-12 mt-4">
                         <div class="d-flex flex-wrap align-items-center justify-content-center">
-                            <a href="{{ route('customers.create') }}" class="btn btn-primary add-list mx-1">Agregar cliente</a>
+                            <a wire:navigate href="{{ route('customers.create') }}" class="btn btn-primary add-list mx-1">Agregar cliente</a>
                             <button type="submit" class="btn btn-success add-list mx-1">Crear factura</button>
                         </div>
                     </div>
